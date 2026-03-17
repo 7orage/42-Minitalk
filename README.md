@@ -3,7 +3,7 @@ _We are the 14th march 2025._
 
 # $\color{lightskyblue}{Minitalk}$  
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
-### $\color{lightcoral}{Table of contents}$
+### $\color{lightcoral}{Table  of  contents}$
 ***
 1. _Description_
 2. _Instructions_
