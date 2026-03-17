@@ -1,9 +1,9 @@
 _This project has been created as part of the 42 curriculum by lheteau._  
 _We are the 14th march 2025._
 
-# $\color{lightskyblue}{Minitalk}$  
+# $\color{lightskyblue}{\huge\text{Minitalk}}$  
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
-### $\color{lavender}{\text{Table of contents}}$
+### $\color{lavender}{\large\text{Table of contents}}$
 ***
 1. _Description_
 2. _Instructions_
