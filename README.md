@@ -5,9 +5,9 @@ _We are the 14th march 2025._
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
 ### $\color{lavender}{\large\text{Table of contents}}$
 ***
-1. _Description_
-2. _Instructions_
-3. _Ressources_
+1. $\color{lightblue}{\textit{Description}}$
+2. $\color{skyblue}{\textit{Instructions}}$
+3. $\color{lightskyblue}{\textit{Ressources}}$
 
 ***
 ## $\color{lightblue}{\Large\text{Description}}$
