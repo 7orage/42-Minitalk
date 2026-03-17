@@ -26,11 +26,11 @@ The server receives these signals, reconstructs the byte using bitwise operation
 To compile the project :
 ```make```  
 
-To proceed with execution, utilize the two a.out files as detailed below :
+To proceed with execution, utilize the two a.out files as detailed below :  
 ```./server```
 
-```./client <PID_SERVER> <MESSAGE>```
-![Previsualisation of the error message when ](https://github.com/user-attachments/assets/39931b31-0ba7-4d6c-8065-b08b094d559b)
+```./client <PID_SERVER> <MESSAGE>```  
+![Previsualisation of the error message when unusable input](https://github.com/user-attachments/assets/39931b31-0ba7-4d6c-8065-b08b094d559b)
 
 ## **Ressources**
 ***
