@@ -6,7 +6,7 @@
 /*   By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 16:48:02 by lheteau           #+#    #+#             */
-/*   Updated: 2026/03/17 13:18:21 by lheteau          ###   ########.fr       */
+/*   Updated: 2026/03/17 15:43:43 by lheteau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,6 @@
 # include <unistd.h>
 # include <signal.h>
 # include <sys/types.h>
-# include <strings.h>
-
-
+# include <stdbool.h>
 
 #endif

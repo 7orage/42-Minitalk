@@ -6,7 +6,7 @@
 #    By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/03/14 16:41:18 by lheteau           #+#    #+#              #
-#    Updated: 2026/03/15 18:50:33 by lheteau          ###   ########.fr        #
+#    Updated: 2026/03/17 17:01:38 by lheteau          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,7 @@ SRC_CLIENT = src_client/main_client.c
 OBJ_DIR = obj
 OBJ_SERVER = $(addprefix $(OBJ_DIR)/,$(SRC_SERVER:.c=.o))
 OBJ_CLIENT = $(addprefix $(OBJ_DIR)/,$(SRC_CLIENT:.c=.o))
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -g
 # -MMP pour eviter les make re et remake les fichiers modifies
 
 
