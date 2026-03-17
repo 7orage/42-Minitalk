@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by lheteau._  
 _We are the 14th march 2025._
 
-# $\color{lightskyblue}{Minitalk}$  
+# $\color{lightskyblue}{MINITALK}$  
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
 ### Table of contents
 ***
