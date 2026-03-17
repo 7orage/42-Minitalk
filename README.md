@@ -1,16 +1,16 @@
 _This project has been created as part of the 42 curriculum by lheteau._  
 _We are the 14th march 2025._
 
-$\color{lightskyblue}{\huge\text{Minitalk}}$  
+# $\color{lightskyblue}{\huge\text{Minitalk}}$  
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
-$\color{lavender}{\large\text{Table of contents}}$
+### $\color{lavender}{\large\text{Table of contents}}$
 ***
 1. _Description_
 2. _Instructions_
 3. _Ressources_
 
 ***
-## $\color{lightcoral}{Description}$
+## $\color{thistle}{\Large\text{Description}}$
 ***
 • Minitalk is a client-server communication system that transmits data using only UNIX signals (SIGUSR1 and SIGUSR2). The goal is to send strings from a client to a server by converting characters into binary, demonstrating a mastery of bitwise operations and inter-process synchronization.
 ***
@@ -18,7 +18,7 @@ $\color{lavender}{\large\text{Table of contents}}$
 
 The server receives these signals, reconstructs the byte using bitwise operations, and employs a static boolean flag to switch between two phases: it first collects and stores the client's PID as a string, then switches to printing the message characters directly to the terminal. Both the PID and the message are terminated by a null character (\0), allowing the server to know exactly when to transition states or send a final confirmation signal back to the client to acknowledge receipt.
 
-## **Instructions**
+## $\color{plum}{\Large\text{Instructions}}$
 ***
 • To use it in your own project, include the header :
 ```#include "minitalk.h"```.
@@ -33,7 +33,7 @@ To proceed with execution, utilize the two a.out files as detailed below :
 
 ![Previsualisation of the error message when unusable input](https://github.com/user-attachments/assets/39931b31-0ba7-4d6c-8065-b08b094d559b)
 
-## **Ressources**
+## $\color{violet}{\Large\text{Ressources}}$
 ***
 • [Kent Uni's introduction to Unix signals](https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html) was a fundamental resource for understanding the concept of PID.  
 
