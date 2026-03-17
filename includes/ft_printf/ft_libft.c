@@ -6,7 +6,7 @@
 /*   By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/07 15:44:11 by lheteau           #+#    #+#             */
-/*   Updated: 2026/01/24 16:50:51 by lheteau          ###   ########.fr       */
+/*   Updated: 2026/03/17 12:41:22 by lheteau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,6 @@ int	ft_numlen_unsigned(unsigned int n)
 	int		len;
 
 	len = 0;
-	if (n < 0)
-	{
-		len++;
-		n *= -1;
-	}
 	if (n == 0)
 		len++;
 	while (n != 0)

@@ -6,7 +6,7 @@
 /*   By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/18 17:19:57 by lheteau           #+#    #+#             */
-/*   Updated: 2026/01/24 16:57:06 by lheteau          ###   ########.fr       */
+/*   Updated: 2026/03/17 12:39:45 by lheteau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ char	*ft_strjoin(char const *s1, const char *s2)
 	if (join == NULL)
 	{
 		free(join);
-		return (join);
+		return (NULL);
 	}
 	while (s1[i])
 	{

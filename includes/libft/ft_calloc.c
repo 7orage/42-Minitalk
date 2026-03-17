@@ -6,7 +6,7 @@
 /*   By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/13 16:05:47 by lheteau           #+#    #+#             */
-/*   Updated: 2025/11/24 12:12:47 by lheteau          ###   ########.fr       */
+/*   Updated: 2026/03/17 12:39:30 by lheteau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_calloc(size_t elementCount, size_t elementSize)
 
 	p = (unsigned char *)malloc(elementCount * elementSize);
 	i = 0;
-	if (p == NULL || elementCount < 0 || elementSize < 0)
+	if (p == NULL)
 		return (p);
 	while (i < elementCount * elementSize)
 	{

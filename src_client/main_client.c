@@ -6,7 +6,7 @@
 /*   By: lheteau <lheteau@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/03/14 16:52:02 by lheteau           #+#    #+#             */
-/*   Updated: 2026/03/15 19:59:09 by lheteau          ###   ########.fr       */
+/*   Updated: 2026/03/17 13:11:51 by lheteau          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,15 +20,9 @@ void	send_char(int c, int pid)
 	while (bit >= 0)
 	{
 		if ((c & (1 << bit)))
-		{
 			kill(pid, SIGUSR1);
-			ft_printf("il y a un 1 \n");
-		}
 		else
-		{
 			kill(pid, SIGUSR2);
-			ft_printf("il y a un 0 \n");
-		}
 		usleep(100);
 		bit--;
 	}
@@ -36,26 +30,25 @@ void	send_char(int c, int pid)
 
 int	main(int argc, char **argv)
 {
-	int		pid;
+	int		pid_server;
 	char	*message;
 	int		i;
 
 	i = 0;
 	(void)argv;
 	if (argc != 3)
-		ft_printf("USE AS : ./client <PID_SERVER> <MESSAGE>\n");
-	pid = ft_atoi(argv[1]);
-	if (pid <= 0)
-		return (0);
+		return (ft_printf("USE AS : ./client <PID_SERVER> <MESSAGE>\n"), 0);
+	pid_server = ft_atoi(argv[1]);
+	if (pid_server <= 0 || pid_server > 2147483647)
+		return (ft_printf("Use a valid PID\n"), 0);
 	message = ft_strdup(argv[2]);
-	ft_printf("message %s\n", message);
+
+
 	while (message[i])
 	{
-		send_char(message[i], pid);
-		ft_printf("autre char \n");
+		send_char(message[i], pid_server);
 		i++;
-		usleep(100);
 	}
-	send_char('\0', pid);
+	send_char('\0', pid_server);
 	free(message);
 }
