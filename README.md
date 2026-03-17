@@ -1,10 +1,8 @@
-14 mars
-
 _This project has been created as part of the 42 curriculum by lheteau._  
-_We are the 29th december 2025._
+_We are the 14th march 2025._
 
 # Minitalk
-![Previsualisation of xxxxx(xxxxxxxxxx)
+![Previsualisation of the Minitalk's output(https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
 ### Table of contents
 ***
 1. _Description_
@@ -53,4 +51,3 @@ They were also helpful in the writing and structuring of this README.
 ***
 <a href="https://www.linkedin.com/in/laura-heteau/" target="_blank"><img align="center" alt="LinkedIn" height="60" src="https://user-images.githubusercontent.com/81205527/157161849-01a9df02-bf32-45be-add4-122bc40b48cf.png"></a>
 <a href = "mailto:laura.heteauu@gmail.com"> <img align="center" alt="Gmail - laura.heteauu@gmail.com" height="60" src="https://user-images.githubusercontent.com/81205527/157161831-eb9dffee-404b-4ffe-b0af-34671219f7fb.png"></a>
-![Previsualisation of xxxxxxxxxxxxxx](xxxxxxxxxxxxxxx) 
