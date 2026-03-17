@@ -1,119 +1,56 @@
 14 mars
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-exec = client 
-exec = server 
-==
-1 makefile = 2 output
-
-server (output) = PID
-client (input) = PID "message to print"
-
-
-deux signals ? SIGUSR1 SIGUSR2 (GLOBAL VARIABLE)
-pour un SIGUSR == signal_handler fonction 
-	sending signals to processses by using kill <signal name> <PID> command 
-
-
-
-Client Checklist
-
-In the "client.c" file, you will...
-
-//*Write a program (main) in which the client takes two parameters/arguments
-
-//	*The PID of the server to which it wants to send the message
-
-  //  *A message
-
-*Encrypt the message (I did the encryption via bits)
-{
-	//chaques character a un indice dan sle tableau ascii (H == 72 ), ce nombre la doit etre convertit en bits et envoye biuts par bits au server 
-}
-
-///*Send the message to the server (via its PID)
-
-///*Create a stop condition so that the server knows when it has finished receiving the message
-
-
-
-Server Checklist
-
-In the "server.c" file, you will...
-
-//*Display its PID
-
-//*Create an endless loop so that the server can receive signals at any time
-
-//*Receive signals
-
-//*Decrypt signals
-
-//        *For each signal received (SIGUSR1 & SIGUSR2) it should take a certain action
-
-
-
-Basic Checklist
-
-Of course you will also need to do these three things:
-
-*Makefile (create the "server" and "client" executables)
-
-*Manage errors & remove all leaks
-
-*Deal with the holy norminette
-
-
-//int sigaction (int signum, const struct sigaction * act,
-//                                 struct sigaction * o_act);
-
-//struct sigaction
-//{
-//    void    (*sa_handler) (int);
-//    sigset_t sa_mask;
-//    int      sa_flags;
-//
-//}; // sigaction
-
-
-
-ressources 
-- https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html //article pour PID 
-
-- https://pubs.opengroup.org/onlinepubs/009695399/basedefs/signal.h.html pr librairie
-
-
-- https://projetsduino.com/1647/volatile/ pour comprendre les variables volatiles
-- https://www.ibm.com/docs/fr/i/7.5.0?topic=qualifiers-volatile-type-qualifier pr volatiles
-
-
-	test:
-- https://fr.loremipsum360.com/ //pour generer des characters
+_This project has been created as part of the 42 curriculum by lheteau._  
+_We are the 29th december 2025._
+
+# Minitalk
+![Previsualisation of xxxxx(xxxxxxxxxx)
+### Table of contents
+***
+1. _Description_
+2. _Instructions_
+3. _Ressources_
+
+***
+## **Description**
+***
+• Minitalk is a client-server communication system that transmits data using only UNIX signals (SIGUSR1 and SIGUSR2). The goal is to send strings from a client to a server by converting characters into binary, demonstrating a mastery of bitwise operations and inter-process synchronization.
+***
+• The communication relies on a bit-by-bit protocol using two UNIX signals: the client decomposes each character into 8 bits, sending a SIGUSR1 for a bit set to 1 and a SIGUSR2 for a bit set to 0. 
+
+The server receives these signals, reconstructs the byte using bitwise operations, and employs a static boolean flag to switch between two phases: it first collects and stores the client's PID as a string, then switches to printing the message characters directly to the terminal. Both the PID and the message are terminated by a null character (\0), allowing the server to know exactly when to transition states or send a final confirmation signal back to the client to acknowledge receipt.
+
+## **Instructions**
+***
+• To use it in your own project, include the header :
+```#include "minitalk.h"```.
+
+To compile the project :
+```make```  
+
+To proceed with execution, utilize the two a.out files as detailed below :
+```./server```
+
+```./client <PID_SERVER> <MESSAGE>```
+
+## **Ressources**
+***
+• [Kent Uni's introduction to Unix signals](https://www.cs.kent.edu/~ruttan/sysprog/lectures/signals.html) was a fundamental resource for understanding the concept of PID.  
+
+[Open group's article](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/signal.h.html) is a comprehensive deep-dive into <signal.h>.  
+
+To better understand volatile variables and the use of atomic global variables, I dived into [Duino's post on projectduino.com](https://projetsduino.com/1647/volatile/) and [Dthe documentation of IBM](https://www.ibm.com/docs/fr/i/7.5.0?topic=qualifiers-volatile-type-qualifier ).
+***
+• Artificial Intelligence tools were used to master the optimization of the Makefile.
+
+They were also helpful in the writing and structuring of this README.
+***
+• To push the project to its highest standard, the following generators were instrumental in identifying edge cases and validating the robustness of the sending and receiving processes :
+
+[Loremipsum360 one](https://fr.loremipsum360.com/) to have the choice of character's number and
+
+[The famous Lorem ipsum website](https://www.lipsum.com/) .
+***
+<a href="https://www.linkedin.com/in/laura-heteau/" target="_blank"><img align="center" alt="LinkedIn" height="60" src="https://user-images.githubusercontent.com/81205527/157161849-01a9df02-bf32-45be-add4-122bc40b48cf.png"></a>
+<a href = "mailto:laura.heteauu@gmail.com"> <img align="center" alt="Gmail - laura.heteauu@gmail.com" height="60" src="https://user-images.githubusercontent.com/81205527/157161831-eb9dffee-404b-4ffe-b0af-34671219f7fb.png"></a>
+![Previsualisation of xxxxxxxxxxxxxx](xxxxxxxxxxxxxxx) 
