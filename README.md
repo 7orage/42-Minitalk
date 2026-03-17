@@ -10,7 +10,7 @@ _We are the 14th march 2025._
 3. _Ressources_
 
 ***
-## **Description**
+## $\color{aquamarine}{Description}$
 ***
 • Minitalk is a client-server communication system that transmits data using only UNIX signals (SIGUSR1 and SIGUSR2). The goal is to send strings from a client to a server by converting characters into binary, demonstrating a mastery of bitwise operations and inter-process synchronization.
 ***
