@@ -1,7 +1,7 @@
 _This project has been created as part of the 42 curriculum by lheteau._  
 _We are the 14th march 2025._
 
-# $\color{lightskyblue}{MINITALK}$  
+# $\color{lightskyblue}{Minitalk}$  
 ![Previsualisation of the Minitalk's output](https://github.com/user-attachments/assets/042ab962-9ca3-4952-bce5-a177e37d0504)
 ### Table of contents
 ***
@@ -10,7 +10,7 @@ _We are the 14th march 2025._
 3. _Ressources_
 
 ***
-## $\color{aquamarine}{Description}$
+## $\color{pink}{Description}$
 ***
 • Minitalk is a client-server communication system that transmits data using only UNIX signals (SIGUSR1 and SIGUSR2). The goal is to send strings from a client to a server by converting characters into binary, demonstrating a mastery of bitwise operations and inter-process synchronization.
 ***
